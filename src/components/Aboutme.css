@@ -1,0 +1,50 @@
+.app__aboutme {
+  position: relative;
+}
+
+.app__aboutme-content {
+  width: 100%;
+  z-index: 2;
+}
+
+.app__aboutme-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+
+.app__aboutme-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+.app__aboutme-left img {
+  width: 350px;
+}
+/* .app__aboutme-left p,
+.app__aboutme-right p {
+  margin: 2rem 0;
+  color: var(--color-grey);
+} */
+
+@media screen and (min-width: 2000px) {
+  .app__aboutme-left p,
+  .app__aboutme-right p {
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app__aboutme-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+}
