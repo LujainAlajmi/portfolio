@@ -1,4 +1,5 @@
 import React from "react";
+import "./Lujain.css";
 
 function Lujain() {
   const lujain = {
@@ -9,10 +10,10 @@ function Lujain() {
   };
   return (
     <div>
-      <h1>{lujain.name}</h1>
-      <h3>{lujain.age}</h3>
-      <h4>{lujain.likes}</h4>
-      <h4>{lujain.skills}</h4>
+      <h1 className="textColor">{lujain.name}</h1>
+      <h3 className="textColor">{lujain.age}</h3>
+      <h4 className="textColor">{lujain.likes}</h4>
+      <h4 className="textColor">{lujain.skills}</h4>
     </div>
   );
 }
