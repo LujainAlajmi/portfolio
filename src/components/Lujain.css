@@ -1,3 +1,9 @@
 .textColor {
   color: #cbccdd;
 }
+h1:hover,
+h3:hover,
+h4:hover {
+  color: #eebf3a;
+  cursor: default;
+}

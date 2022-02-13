@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./Aboutme.css";
+import "./Header.css";
 import lujainImg2 from "./image/lujainPic.png";
 import Lujain from "./Lujain";
 import CodeSnippet from "./CodeSnippet";
 
-function AboutMe(props) {
+function Header() {
   const [isClicked, setIsClicked] = useState(false);
   function handleClick(e) {
     e.preventDefault();
@@ -27,4 +27,4 @@ function AboutMe(props) {
   );
 }
 
-export default AboutMe;
+export default Header;

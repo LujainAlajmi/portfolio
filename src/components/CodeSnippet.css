@@ -5,6 +5,7 @@ pre code.hljs {
   font-family: "Fira Code", monospace;
   font-size: 12px;
   margin-bottom: 2rem;
+  cursor: default;
 }
 code.hljs {
   padding: 3px 5px;
