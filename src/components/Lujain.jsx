@@ -13,7 +13,9 @@ function Lujain() {
       <h1 className="textColor">{lujain.name}</h1>
       <h3 className="textColor">{lujain.age}</h3>
       <h4 className="textColor">{lujain.likes}</h4>
-      <h4 className="textColor">{lujain.skills}</h4>
+      <h4 className="textColor" style={{ marginBottom: "2rem" }}>
+        {lujain.skills}
+      </h4>
     </div>
   );
 }

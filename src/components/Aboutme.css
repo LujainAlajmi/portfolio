@@ -1,33 +1,39 @@
-.app__aboutme {
-  position: relative;
+.section__padding {
+  padding: 4rem 6rem;
 }
 
-.app__aboutme-content {
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 50vh;
+}
+.app__wrapper_info {
+  flex: 1;
   width: 100%;
-  z-index: 2;
-}
-
-.app__aboutme-left {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  text-align: right;
-}
-
-.app__aboutme-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  text-align: left;
 }
-.app__aboutme-right button {
-  background-color: #070b13;
-  color: #a9aac6;
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+.app__wrapper_img img {
+  width: 400px;
+}
+.custom__button {
   font-family: "Fira Code", monospace;
+  color: #0d0f1c;
+  background-color: #a9aac6;
+  font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: 16px;
@@ -36,35 +42,43 @@
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 2rem;
 }
-.app__aboutme-right button:hover {
-  color: #070b13;
-
-  background-color: #fbcd33;
+button:hover.custom__button {
+  color: #0d0f1c;
+  background-color: #eebf3a;
 }
-
-.app__aboutme-left img {
-  width: 350px;
-}
-/* .app__aboutme-left p,
-.app__aboutme-right p {
-  margin: 2rem 0;
-  color: var(--color-grey);
-} */
 
 @media screen and (min-width: 2000px) {
-  .app__aboutme-left p,
-  .app__aboutme-right p {
-    margin: 4rem 0;
+  .custom__button {
+    font-size: 37px;
+    line-height: 67px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .app__aboutme-content {
+@media screen and (max-width: 1150px) {
+  .app__wrapper {
     flex-direction: column;
+  }
+
+  .app__wrapper_img {
+    margin: 5rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  button {
+    align-self: center;
   }
 }
 
 @media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  button {
+    align-self: center;
+  }
 }

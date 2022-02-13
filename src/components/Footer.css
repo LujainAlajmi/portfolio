@@ -1,0 +1,36 @@
+footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 0;
+}
+footer p {
+  color: #ccc;
+}
+@media screen and (min-width: 2000px) {
+  footer p {
+    font-size: 51px;
+    line-height: 61.6px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  footer {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    padding: 0 0 2rem 0;
+  }
+}
