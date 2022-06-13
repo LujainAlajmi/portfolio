@@ -9,7 +9,7 @@ function Footer() {
     <div>
       <footer>
         {" "}
-        <p>made with awesomeness  {getYear()}</p>
+        <p>made with awesomeness 🤘 {getYear()}</p>
       </footer>
     </div>
   );
